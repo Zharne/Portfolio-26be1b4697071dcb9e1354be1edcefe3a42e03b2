@@ -37,15 +37,16 @@
 
 <style scoped>
 .container{
-    background-color:  #111;
+    background-color:  #C3A995;
     height: 100vh;
-    margin-left: 250px;
+    margin-left: 150px;
     width: 80%;
-    border-radius:10px
-
+    border-radius:10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 } 
+
 h1{
-    color:#f00;
+    color:#6F5E53;
     text-shadow: 2px 2px 5px gray;
 }
 .img-box {
@@ -86,7 +87,7 @@ h1{
 
 .rf-btn:hover  {
     color: white;
-    background: rgba(13, 95, 226, 0.507);
+    background: #6F5E53;
 }
 
 ul {
@@ -146,19 +147,19 @@ ul li a:hover:before {
 }
 
 ul li:nth-child(1) a:before{
-  background: #3b5999;
+  background: #6F5E53;
 }
 
 ul li:nth-child(2) a:before{
-  background: #55acee;
+  background: #6F5E53;
 }
 
 ul li:nth-child(3) a:before {
-  background: #0077b5;
+  background: #6F5E53;
 }
 
 ul li:nth-child(4) a:before {
-  background: #dd4b39;
+  background: #6F5E53;
 }
 
 /* 
@@ -173,4 +174,51 @@ ul li:nth-child(4) a:before {
   }
 } */
 
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+.container{ width: 40%;
+}
+ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+.ul{
+    transform: translate(-20%, -263%);
+}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .container{ width: 50%;
+}
+ul li a {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+/* .ul{
+    margin-left: 80%;
+} */
+}
 </style>

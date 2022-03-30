@@ -1,63 +1,89 @@
 <template>
-<div class="sidenav">
-    <!-- <img src="https://i.postimg.cc/ry7cbbcP/depositphotos-346967382-stock-illustration-initial-logo-design-vector-template.jpg" style="border-radius:50%"> -->
-  <a href="#home">Home</a>
+  <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
   <a href="#about-me">About</a>
-  <a href="#resume">Resume</a>
+  <a href="#resume">Contact</a>
   <a href="#projects">Projects</a>
   <a href="#testimonials">Testimonials</a>
   <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+
+<!-- <div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div> -->
+
+
 </template>
 
 <script>
-export default {
-
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 </script>
 
 <style scoped>
 body {
-  font-family: "Lato", sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 100px;
-  
-  
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+.topnav a {
+  float: left;
   display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.topnav a:hover {
+  background-color: #C3A995;
+  color: black;
 }
 
-main {
-  margin-left: 200px;
-  font-size: 28px; 
-  padding: 0px 10px;
+.topnav a.active {
+  background-color: #6F5E53;
+  color: white;
 }
 
-@media screen and (max-width: 450px) {
-  .sidenav {
-    padding-top: 15px;
-    background-color: black;
-    }
-  .sidenav a {font-size: 18px;}
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: inline-block;
+    text-align: left;
+  }
 }
 </style>

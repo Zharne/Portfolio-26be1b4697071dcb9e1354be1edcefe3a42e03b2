@@ -4,7 +4,7 @@
   			<div v-for = "project in projects" :key="project.id" class="project">
 					<div class="card">
 						<div class="card-image">
-							<img src="{{projects.img}}" alt="">
+							<img :src="projects.img" alt="">
 						</div>
 						<div class="card-content">
 							<h3>{{projects.title}}</h3>
@@ -61,7 +61,7 @@ export default {
 	width: 300px;
 	height: 400px;
 	/* background: rgba(255, 255, 255, 0.05); */
-  	background:#111;
+  	background:#C3A995;
 	margin: 20px;
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
@@ -140,15 +140,9 @@ export default {
 	color: #fff;
 	font-size: 20px;
 }
-#about-me{
-  background-color: whitesmoke;
-  /* padding-bottom: 30px; */
-  height: 100vh;
-  width: 100%;
-}
 .container{
     height: 100vh;
-    margin-left: 200px;
+    margin-left: 120px;
     /* padding-bottom:30px ; */
 }
 
@@ -192,8 +186,8 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-   background-color: #1fd1f9;
-background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+   background-color: #6F5E53;
+background-image: linear-gradient(315deg, #C3A995 0%, #6F5E53 74%);
   transition: all 0.3s ease;
 }
 .btn-9:hover {

@@ -36,7 +36,7 @@ export default {
 
 <style>
 body{
-  background-color: whitesmoke;
+  background-color: black;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -46,5 +46,7 @@ body{
   color: #2c3e50;
   overflow-x:hidden ;
 }
-
+.main{
+  background-color: #689689;
+}
 </style>

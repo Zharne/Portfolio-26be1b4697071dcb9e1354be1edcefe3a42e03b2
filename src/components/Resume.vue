@@ -8,7 +8,7 @@
                     <a href="#" class="timeline-content">
                         <div class="timeline-year">2015</div>
                         <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                        <h3 class="title">National Senior Certificate(Matric)</h3>
+                        <h3 class="title">National Senior Certificate</h3>
                         <h5>Oude Molen Technical High School</h5>
                         <p class="description">
                           Afrikaans, English, Life Science, Mathematics, Life Orientation, Mechanical Technology, Business Studies.
@@ -64,19 +64,22 @@
     </div>
 </div>
   </div>
+  
 </template>
 
 <script>
-
+  
 </script>
 
 <style scoped>
 #resume{
   height: 200vh;
-  background-color:  #111;
-  margin-left: 250px;
+  background-color:  #C3A995;
+  margin-left: 150px;
   width: 80%;
-  border-radius:10px
+  border-radius:10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+
 }
 
 .main-container {
@@ -85,6 +88,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  
 }
 .row{
   margin: 2rem;
@@ -104,6 +108,7 @@
 .main-timeline{
     font-family: 'Poppins', sans-serif;
     padding: 15px 0;
+    margin-left: 100px;
 }
 .main-timeline:after{
     content: '';
@@ -131,7 +136,7 @@
 .main-timeline .timeline-content:hover{ text-decoration: none; }
 .main-timeline .timeline-content:before{
     content: '';
-    background-color: #B330C0;
+    background-color: #6F5E53;
     height: 80%;
     width: calc(100% + 15px);
     border-radius: inherit;
@@ -142,7 +147,7 @@
 }
 .main-timeline .timeline-year{
     color: #fff;
-    background-color: #B330C0;
+    background-color: #6F5E53;
     font-size: 20px;
     font-weight: 600;
     padding: 5px 5px 7px;
@@ -194,40 +199,52 @@
 }
 .main-timeline .timeline:nth-child(4n+2) .timeline-content::before,
 .main-timeline .timeline:nth-child(4n+2) .timeline-year{
-    background-color: #CB246E;
+    background-color: #6F5E53;
 }
 .main-timeline .timeline:nth-child(4n+3) .timeline-content::before,
 .main-timeline .timeline:nth-child(4n+3) .timeline-year{
-    background-color: #FB7E05;
+    background-color: #6F5E53;
 }
 .main-timeline .timeline:nth-child(4n+4) .timeline-content::before,
 .main-timeline .timeline:nth-child(4n+4) .timeline-year{
-    background-color: #00A8D7;
+    background-color: #6F5E53;
 }
 @media screen and (max-width:767px){
-    .main-timeline .timeline,
-    .main-timeline .timeline:nth-child(even){
-        width: 100%;
-        margin: 0 0 40px;
-    }
+.main-timeline .timeline,
+.main-timeline .timeline:nth-child(even){
+    width: 100%;
+    margin: 0 0 40px;
+}
 }
 @media screen and (max-width:576px){
-    .main-timeline .timeline-content,
-    .main-timeline .timeline:nth-child(even) .timeline-content{
-        padding: 65px 15px 15px 15px;
-    }
-    .main-timeline .timeline-icon{
-        transform: translateY(0);
-        top: 5px;
-        left: auto;
-        right: 15px;
-    }
-    .main-timeline .timeline:nth-child(even) .timeline-icon{
-        transform: translateY(0);
-        top: 5px;
-        right: auto;
-        left: 15px;
-    }
+.main-timeline .timeline-content,
+.main-timeline .timeline:nth-child(even) .timeline-content{
+    padding: 65px 15px 15px 15px;
+}
+.main-timeline .timeline-icon{
+    transform: translateY(0);
+    top: 5px;
+    left: auto;
+    right: 15px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon{
+    transform: translateY(0);
+    top: 5px;
+    right: auto;
+    left: 15px;
+}
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 </style>

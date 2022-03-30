@@ -24,52 +24,17 @@
 
       <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
       
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+      <button class="send-button" id="submit" type="submit" value="SEND">
         <div class="alt-send-button">
           <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
         </div>
       
       </button>
       
-    </form>
+    </form>    
+    <div class="direct-contact-container">
 
-  <!-- <p>{{name}}</p> -->
-    
-  <!-- Left contact page --> 
-    
-      <div class="direct-contact-container">
-<!-- 
-        <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Cape Town</span></i></li>
-          
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:068-427-0352" title="Give me a call">068-427-0352</a></span></i></li>
-          
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">zharnedesember@gmail.com</a></span></i></li>
-          
-        </ul> -->
-
-        <!-- <hr>
-        <ul class="social-media-list">
-          <li><a href="#" target="_blank" class="contact-icon">
-             <i class="fa fa-github" aria-hidden="true"></i></a>
-            <i class="fab fa-github"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-codepen" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i></a> 
-            <i class="fab fa-linkedin"></i>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </li>       
-        </ul>
-        <hr> -->
-
-        <!-- <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div> -->
-
-      </div>
+    </div>
   </div>  
   </div>
 </template>
@@ -115,7 +80,7 @@
   height: 100%;
   /* background-color:darkgray; */
   width: 70%;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-bottom: 5%;
 }
 /* .form-container{
@@ -126,15 +91,13 @@
     border-radius: 50%;
 } */
 .section-header {
- 
   text-align: center;
   margin-left:10%;
   padding: 40px 0;
   font: 300 60px 'Oswald', sans-serif;
-  color: black;
+  color: #6F5E53;
   text-transform: uppercase;
-  letter-spacing: 6px;
-  
+  letter-spacing: 4px;
 }
 
 .contact-wrapper {
@@ -145,7 +108,6 @@
   padding: 20px;
   position: relative;
   max-width: 840px;
-  
 }
 
 /* Left contact page */
@@ -159,9 +121,10 @@
 .form-control, 
 textarea {
   max-width: 400px;
-  background-color: #111;
+  background-color: #C3A995;
   color: #fff;
   letter-spacing: 1px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 .send-button {
@@ -183,6 +146,7 @@ textarea {
   margin-top: 10px;
   font: 700 12px 'Lato', sans-serif;
   letter-spacing: 2px;
+  
 }
 
 .alt-send-button:hover {
@@ -301,6 +265,9 @@ textarea {
 
 hr {
   border-color: rgba(255,255,255,.6);
+}
+.alt-send-button{
+  background-color: #6F5E53;
 }
 
 /* Begin Media Queries*/

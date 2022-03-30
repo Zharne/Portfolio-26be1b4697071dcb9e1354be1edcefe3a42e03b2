@@ -1,70 +1,94 @@
 <template>
-  <section>
-<div id='testimonials'>
-	<div class="row">
-		<div class="col">
-			<h2>Testimonials</h2>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Carousel indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                    <li data-target="#myCarousel" data-slide-to="5"></li>
-				</ol>   
-				<!-- Wrapper for carousel items -->
-				<div class="carousel-inner">
-					<div class="carousel-item active"><br>
-						<div class="img-box"><img src="https://i.postimg.cc/Nfzq0qRB/Alex.jpg" alt=""></div>
-						<p class="testimonial"></p>
-						<p class="overview"><b>Alex Sexwale</b>,Life Choices lecturer</p>
-					</div>
-					<div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/Znxr3DNc/Kyle3.jpg" alt=""></div>
-						<p class="testimonial">Zharne is a dedicated,hard-working individual striving for greatness</p>
-						<p class="overview"><b>Kyle McBryne</b>, Colleague at Life Choices</p>
-					</div>
-					<div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/XJ8JgM2p/Amaarah3.jpg" alt=""></div>
-						<p class="testimonial">Zharne is a very hard-working individual. She is willing to help others and she is a good team member. Her personality will be a great asset to any work envornment.</p>
-						<p class="overview"><b>Amaarah January</b>, Colleague at Life Choices</p>
-					</div>
-                    <div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/NMgGFJgY/Bongani3.jpg" alt=""></div>
-						<p class="testimonial">Vestibulum</p>
-						<p class="overview"><b>Bongani M</b>, Colleague at Life Choices</p>
-					</div>
-                    <div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/CLBMx8wd/hannah.jpg" alt=""></div>
-						<p class="testimonial">Zharne is a hardworking team player, any team would be lucky to have her on board.</p>
-						<p class="overview"><b>Hannah Dalwai</b>, Colleague at Life Choices</p>
-					</div>
-                    <div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/RFsCtxrZ/pexels-andrea-piacquadio-3892920.jpg" alt=""></div>
-						<p class="testimonial">Vestibulum </p>
-						<p class="overview"><b>Mugammad Breda</b>, Colleague at Life Choices</p>
-					</div>
-				</div>
-				<!-- Carousel controls -->
-				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-					<i class="fa fa-angle-left"></i>
-				</a>
-				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
-					<i class="fa fa-angle-right"></i>
-				</a>
-			</div>
+<section>
+	<div id='testimonials'>
+		<div class="container-lg my-3">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+        </ol>
+		<!-- wrapper for carousel -->
+		<div class="row justify-content-evenly">
+			
+		  <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.postimg.cc/NMgGFJgY/Bongani3.jpg" class="d-block">
+                <div class="carousel-caption d-none d-md-block">	
+                    <h5>Bongani Nomangola</h5>
+                    <p>Zharne is a people's person, approachable, friendly and determined in achieving her every goal no matter what.</p>
+					<h5>Colleague at Life Choices</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.postimg.cc/XJ8JgM2p/Amaarah3.jpg" class="d-block" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ammaarah January</h5>
+                    <p>Zharne is a very hard-working individual. She is willing to help others and she is a good team member. Her personality will be a great asset to any work envornment.</p>
+					<h5>Colleague at Life Choices</h5>
+                </div> 
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.postimg.cc/Znxr3DNc/Kyle3.jpg" class="d-block" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Kyle McBryne</h5>
+                    <p>Zharne is a dedicated,hard-working individual striving for greatness.</p>
+					<h5>Colleague at Life Choices</h5>
+                </div>
+            </div>
+			<div class="carousel-item">
+                <img src="https://i.postimg.cc/CLBMx8wd/hannah.jpg" class="d-block" alt="Slide 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hannah Dalwai</h5>
+                    <p>Zharne is a hardworking team player, any team would be lucky to have her on board</p>
+					<h5>Colleague at Life Choices</h5>
+                </div>
+            </div>
+			<div class="carousel-item">
+                <img src="https://i.postimg.cc/wB8vhZgG/Breda.jpg" class="d-block" alt="Slide 5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mogammad Breda</h5>
+                    <p>Zharne is very hardworking, kind and is never afraid to ask for help. Great qualities that are needed in her field of work.</p>
+					<h5>Colleague at Life Choices</h5>
+                </div>
+            </div>
+        </div>
+	</div>
+
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    			
 		</div>
 	</div>
-</div>
 </section>
 </template>
 
 <script>
-export default {
-
+export default { 
+  data() {
+    return {
+      testimonials: []
+    }
+  },
+  mounted() {
+    fetch('https://zharneportfolio.herokuapp.com/testimonials')
+      .then(res => res.json())
+      .then(data => this.testimonials = data)
+      .catch(err => console.log(err.message))
+  }
 }
+
+
+
 </script>
 
 <style scoped>
@@ -72,118 +96,30 @@ section{
 	height: 100vh;
 	margin-top: 50vh;
 }
-.row{
-	margin-left: 100px;
-} 
-#testimonials{
-	width: 80%;
-	background-color:  #111;
-	margin-left: 250px;
-	margin-top: 70vh;
-	border-radius:10px ;
 
-} 
-.carousel-indicators{
-	bottom: 0;
+.container-lg my-3{
+	margin-left: 120px;
 }
-.container{
-    margin-left: 100px;
-	
-} 
-.container-xl{
-    margin-top: 20vh;
-	margin-left: 420px;
+.carousel-inner{
+	height: 70vh;
 }
-h2 {
-	color: #333;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
-	font-weight: bold;
-	position: relative;
-	margin: 30px 0 60px;
+#myCarousel{
+	margin-left: 30px;
+	background-color: #C3A995;
+	border-radius: 10px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
-h2::after {
-	content: "";
-	width: 100px;
-	position: absolute;
-	margin: 0 auto;
-	height: 3px;
-	background: #8fbc54;
-	left: 0;
-	right: 0;
-	bottom: -10px;
-}
-.col-center {
-	margin: 0 auto;
-	float: none !important;
-}
-.carousel {
-	padding: 0 70px;
-}
-.carousel .carousel-item {
-	color: #999;
-	font-size: 14px;
-	text-align: center;
-	overflow: hidden;
-	min-height: 290px;
-}
-.carousel .carousel-item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
+.d-block{
 	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	margin: 20px;
 }
-.carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
+.carousel-caption{
+	margin-left: 40%;
+	margin-bottom: 15%;
 }
-.carousel .testimonial {
-	padding: 30px 0 10px;
-}
-.carousel .overview {	
-	font-style: italic;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #7AA641;
-}
-.carousel-control-prev, .carousel-control-next {
-	width: 40px;
-	height: 40px;
-	margin-top: -20px;
-	top: 50%;
-	background: none;
-}
-.carousel-control-prev i, .carousel-control-next i {
-	font-size: 68px;
-	line-height: 42px;
-	position: absolute;
-	display: inline-block;
-	color: rgba(0, 0, 0, 0.8);
-	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
-/* .carousel-indicators {
-	bottom: -5px;
-} */
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 12px;
-	height: 12px;
-	margin: 1px 3px;
-	border-radius: 50%;
-	border: none;
-}
-.carousel-indicators li {	
-	background: #7AA641;
-	border-color: transparent;
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-.carousel-indicators li.active {	
-	background: #555;		
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+h5{
+	color: #6F5E53;
 }
 </style>

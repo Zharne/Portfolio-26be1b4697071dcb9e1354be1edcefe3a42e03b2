@@ -1,13 +1,12 @@
 <template>
 <footer>
     <div class="footer-content">
-
         <div class="footer-bottom">
             <p>copyright &copy;2022 <a href="#about-me">Zharne Desember</a>  </p>
             <div class="footer-menu">
             <ul class="f-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="">Testimonials</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a target href="https://docs.google.com/document/d/1BNq0GgOnKe2GsPqXlD5l_oy9zYZPytQMoJMmDJ7Hpfc/edit">Resume</a></li>
             </ul>
@@ -32,7 +31,7 @@ export default {
     box-sizing: border-box;
 }
 body{
-    background: #000;
+    background: #504136;
     font-family: sans-serif;
 }
 
@@ -55,16 +54,16 @@ body{
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
-    color: #cacdd2;
+    color: #feffff;
 }
 
 .footer-bottom{
-    background: #000;
-    width: 85vw;
+    background: #C3A995;
+    width: 100%;
     padding: 20px;
     padding-bottom: 40px;
     text-align: center;
-    margin-left: 186px;
+    /* margin-left: 186px; */
 }
 .footer-bottom p{
    float: left;
@@ -73,7 +72,7 @@ body{
    text-transform: capitalize;
 }
 .footer-bottom p a{
-  color:#44bae8;
+  color:#6F5E53;
   font-size: 16px;
   text-decoration: none;
 }
@@ -96,12 +95,12 @@ display: block;
 }
 
 .footer-menu ul li a{
-  color: #cfd2d6;
+  color: #6F5E53;
   text-decoration: none;
 }
 
 .footer-menu ul li a:hover{
-  color: #27bcda;
+  color: #feffff;
 }
 @media (max-width:500px) {
 .footer-menu ul{
