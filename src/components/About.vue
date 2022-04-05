@@ -92,7 +92,7 @@
     <div class="hover-effect3">
 	<ul>
 		<li><a href="#." title="HTML"><i class="fab fa-html5"></i></a></li>
-		<li><a href="#." title="BOOTSTRAP"></a></li>
+		<li><a href="#." title="JAVASCRIPT"><i class="fab fa-js"></i></a></li>
 		<li><a href="#." title="CSS"><i class="fab fa-css3-alt"></i></a></li>
 		<li><a href="#." title="VUE.JS"><i class="fab fa-vuejs"></i></a></li>
 		<li><a href="#." title="NODE"><i class="fab fa-node-js"></i></a></li>
