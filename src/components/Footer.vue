@@ -2,10 +2,12 @@
 <footer>
     <div class="footer-content">
         <div class="footer-bottom">
-            <p>copyright &copy;2022 <a href="#about-me">Zharne Desember</a>  </p>
+            <p>copyright &copy;2022 <a href="#about-me">Zharne Desember</a></p>
+            
             <div class="footer-menu">
             <ul class="f-menu">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a target href="https://docs.google.com/document/d/1BNq0GgOnKe2GsPqXlD5l_oy9zYZPytQMoJMmDJ7Hpfc/edit">Resume</a></li>

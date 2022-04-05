@@ -12,7 +12,7 @@
             </div>
         </div> 
         <div class="socials">
-            <ul>
+            <!-- <ul>
                 <li>
                     <a href="#">
                     <i class="fab fa-facebook-f icon"></i>    </a>
@@ -24,7 +24,7 @@
                     <a href="https://www.linkedin.com/in/zharné-desember-795b8416b" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
                 <li>
                     <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
-            </ul>
+            </ul> -->
         </div>            
     </div>   
   </div>   
@@ -63,7 +63,6 @@ h1{
 	height: 100%;
 	display: block;
 	border-radius: 50%;
-    
 }
 .button{
     margin-top: 13%;
@@ -90,77 +89,7 @@ h1{
     background: #6F5E53;
 }
 
-ul {
-  display: flex;
-  position: absolute;
-  top: 68%;
-  left: 58%;
-  transform: translate(-50%, -50%);
-}
 
-ul li {
-  list-style: none;
-}
-
-ul li a {
-  width: 70px;
-  height: 70px;
-  background-color: #fff;
-  text-align: center;
-  line-height: 80px;
-  font-size: 35px;
-  margin: 0 10px;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #fff;
-  z-index: 1;
-}
-
-ul li a .icon {
-  position: relative;
-  color: #262626;
-  transition: .5s;
-  z-index: 3;
-}
-
-ul li a:hover .icon {
-  color: #fff;
-  transform: rotateY(360deg);
-}
-
-ul li a:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: .5s;
-  z-index: 2;
-}
-
-ul li a:hover:before {
-  top: 0;
-}
-
-ul li:nth-child(1) a:before{
-  background: #6F5E53;
-}
-
-ul li:nth-child(2) a:before{
-  background: #6F5E53;
-}
-
-ul li:nth-child(3) a:before {
-  background: #6F5E53;
-}
-
-ul li:nth-child(4) a:before {
-  background: #6F5E53;
-}
 
 /* 
 @keyframes img-box {

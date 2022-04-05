@@ -2,6 +2,7 @@
   <div id="about-me">
     <div class='container'>
       <h1>About Me</h1>
+      
       <div class="row">
         <div class="col-6">
           <h4>Personal Details</h4>
@@ -36,16 +37,17 @@
             <p>put something here</p>
           </div>
         </div>
-      </div>
+      </div><br>
       <div class="row">
-      <section class="section2">
+        <h1>My Skills</h1>
+      <!-- <section class="section2">
 			<div class="section2-1">
 				<div class="progress-card progress-vertical">
-					<div class="card-title">Front end</div>
+					<div class="card-title">Front end</div> 
 					<div class="card-content">
 						<div class="group-a">
 							<div class="progress-wrapper">
-								<div class="skill-name">React</div>
+								<div class="skill-name">Node</div>
 								<div class="skill-progress">
 									<div class="inner" style="--value:69%"></div>
 								</div>
@@ -57,7 +59,7 @@
 								</div>
 							</div>
 							<div class="progress-wrapper">
-								<div class="skill-name">Flutter</div>
+								<div class="skill-name">MySQL</div>
 								<div class="skill-progress">
 									<div class="inner" style="--value:75%"></div>
 								</div>
@@ -79,14 +81,23 @@
 							<div class="progress-wrapper">
 								<div class="skill-name">Javascript</div>
 								<div class="skill-progress">
-									<div class="inner" style="--value:70%"></div>
+									<div class="inner" style="--value:60%"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
         </div>
-    </section>  
+    </section>   -->
+    <div class="hover-effect3">
+	<ul>
+		<li><a href="#." title="HTML"><i class="fab fa-html5"></i></a></li>
+		<li><a href="#." title="BOOTSTRAP"></a></li>
+		<li><a href="#." title="CSS"><i class="fab fa-css3-alt"></i></a></li>
+		<li><a href="#." title="VUE.JS"><i class="fab fa-vuejs"></i></a></li>
+		<li><a href="#." title="NODE"><i class="fab fa-node-js"></i></a></li>
+	</ul>
+</div>
     </div>
     </div>
   </div>
@@ -96,7 +107,7 @@
 #about-me{
   background-color: #C3A995;
   /* padding-bottom: 30px; */
-  height: 140vh;
+  height: 150vh;
   width: 80%;
   margin-left: 150px;
   margin-top: 50px;
@@ -119,7 +130,12 @@ h4{
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 
 }
-.section2-1{
+.hover-effect3 { min-height: 200px; background: #C3A995; text-align: center; }
+.hover-effect3 ul { padding-top: 50px; }
+.hover-effect3 ul li { display: inline-block; }
+.hover-effect3 ul li a { font-size: 40px; color: #fff; margin: 0px 10px; line-height: 100px; display: inline-block; width: 100px; height: 100px; background: #6F5E53; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+.hover-effect3 ul li:hover a { background: #6F5E53; -webkit-box-shadow: 8px 8px 10px 0px #C3A995; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); }
+/* .section2-1{
   margin-top: 50px;
   
 }
@@ -193,8 +209,8 @@ body main.home .section2 > div > div .blog {
 }
 
 .progress-card.progress-vertical {
-  width: 55vw;
-  height: 50vh;
+  width: 50vw;
+  height: 40vh;
   margin: 10px;
 }
 .progress-card.progress-vertical .card-content {
@@ -205,6 +221,6 @@ body main.home .section2 > div > div .blog {
 }
 .progress-card.progress-vertical .card-content > div:last-of-type {
   margin-top: -10px;
-}
+} */
 
 </style>
