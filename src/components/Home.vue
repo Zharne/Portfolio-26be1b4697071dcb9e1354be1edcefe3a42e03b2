@@ -68,7 +68,6 @@ h1{
     margin-top: 13%;
 }
 .rf-btn {
-    margin-top: 30px;
     display: inline-block;
     padding: 10px 30px;
     height: 50px;
@@ -82,6 +81,7 @@ h1{
     border: 2px solid white;
     box-shadow: 0 5px 20px -5px rgba(0,0,0,.05);
     font-weight: bold;
+    position: relative;
 }
 
 .rf-btn:hover  {
