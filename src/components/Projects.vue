@@ -1,14 +1,14 @@
 <template>
     <div id='projects'>
-  		<div class="container" v-if="projects.length">
-  			<div v-for = "project in projects" :key="project.id" class="project">
+  		<div class="container">
+  			<div v-for ="project in projects" :key="project.id" class="project">
 					<div class="card">
-						<div class="card-image">
-							<img :src="projects.img" alt="">
+						<div class="card-image" style="border-radius: 50%;">
+							<img :src="project.img" class="pic">
 						</div>
 						<div class="card-content">
-							<h3>{{projects.title}}</h3>
-							<p>{{projects.details}}</p>
+							<h3>{{project.title}}</h3>
+							<p>{{project.details}}</p>
 							
 						</div>
 						<button class="custom-btn btn-9">Github</button><br>
@@ -55,7 +55,11 @@ export default {
 	flex-wrap: wrap;
 	margin: 40px 0;
 }
-
+.pic{
+	width: 100px;
+	height: 100px;
+	/* border-radius: 50%; */
+}
 .container .card {
 	position: relative;
 	width: 300px;
@@ -139,6 +143,10 @@ export default {
 .container .card .sci li a {
 	color: #fff;
 	font-size: 20px;
+}
+.card-image{
+	position: relative;
+	border-radius: 50%;
 }
 .container{
     height: 100vh;
